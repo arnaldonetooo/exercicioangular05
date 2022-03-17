@@ -1,0 +1,35 @@
+<div class="div1">
+
+    <mat-card class="card">
+        <mat-card-title>TO DO APP</mat-card-title>
+
+        <mat-form-field appearance="fill">
+            <input matInput class="input" type="text " 
+            name="username" placeholder="Add one task"
+             #inpt >
+        </mat-form-field>
+
+        <button mat-mini-fab color="" class="btncolor" aria-label="Example icon button with a plus one icon"
+        (click)="salvarNoLocalStorage(inpt.value)" >
+       
+            <mat-icon class="btncolor2">plus_one</mat-icon>
+        </button>
+      
+
+        <ol diretiva>
+            <li *ngFor="let dado of dadoLocalStorage ;let i=index"> {{dado}}
+                <button class="btncolor" mat-mini-fab color="" (click)="deletarDoLocalStorage(i)" style="cursor:pointer">
+                    <mat-icon class="btncolor2">delete</mat-icon>
+                </button><!--  (click)="removetask(inpt.value)" -->
+            </li>
+
+        </ol>
+        
+         <button class="btndelete" mat-fab color="primary" aria-label="Example icon button with a delete icon"
+            (click)="removerTodosOsDados()">
+            Clear All
+        </button>  
+       
+    </mat-card>
+    
+</div>   

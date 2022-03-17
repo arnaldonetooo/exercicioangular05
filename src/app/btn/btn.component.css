@@ -1,0 +1,14 @@
+.btncolor{
+    color-scheme: purple;
+    background-color: blueviolet;
+    }
+    .btncolor2{
+        color: white;
+    }
+    .btndelete{margin-left: 180px;
+       background-color:blueviolet;
+    }
+    app-btn{
+        margin-left: 180px;
+       background-color:blueviolet;
+    }
